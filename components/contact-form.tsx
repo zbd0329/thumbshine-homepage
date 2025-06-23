@@ -17,7 +17,7 @@ export function ContactForm() {
     const phone = formData.get("phone");
     const message = formData.get("message");
 
-    const mailtoLink = `mailto:sarah@thumbshine.co.kr?subject=복도리 제품 문의&body=이름/기관명: ${name}%0D%0A이메일: ${email}%0D%0A연락처: ${phone}%0D%0A문의내용:%0D%0A${message}`;
+    const mailtoLink = `mailto:garosu@thumbshine.co.kr?subject=복도리 제품 문의&body=이름/기관명: ${name}%0D%0A이메일: ${email}%0D%0A연락처: ${phone}%0D%0A문의내용:%0D%0A${message}`;
     window.location.href = mailtoLink;
     
     // 폼 초기화

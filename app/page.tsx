@@ -399,14 +399,14 @@ export default function HomePage() {
                       <MapPin className="w-5 h-5 text-green-600 mt-1 mr-4 flex-shrink-0" />
                       <div>
                         <p className="font-bold text-gray-800">주소</p>
-                        <p className="text-gray-600">경기도 안산시 상록구 한양대학로55 532호</p>
+                        <p className="text-gray-600">경기도 안산시 상록구 한양대학로55 창업보육센터 532호</p>
                       </div>
                     </div>
                     <div className="flex items-start">
                       <Phone className="w-5 h-5 text-green-600 mt-1 mr-4 flex-shrink-0" />
                       <div>
                         <p className="font-bold text-gray-800">전화</p>
-                        <p className="text-gray-600">02-123-4567</p>
+                        <p className="text-gray-600">010-5478-6383</p>
                       </div>
                     </div>
                     <div className="flex items-start">
