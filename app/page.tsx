@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { ContactForm } from "@/components/contact-form"
+import { ProductGallery } from "@/components/product-gallery"
 
 export default function HomePage() {
   return (
@@ -29,6 +30,9 @@ export default function HomePage() {
             </a>
             <a href="#bokdori" className="text-gray-600 hover:text-green-600 transition-colors">
               복도리
+            </a>
+            <a href="#product" className="text-gray-600 hover:text-green-600 transition-colors">
+              제품사진
             </a>
             <a href="#features" className="text-gray-600 hover:text-green-600 transition-colors">
               주요기능
@@ -224,6 +228,19 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* Product Section */}
+        <section id="product" className="py-20 bg-gray-50 scroll-mt-20">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">제품 사진</h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                복도리 제품의 다양한 모습을 확인해보세요
+              </p>
+            </div>
+            <ProductGallery />
+          </div>
+        </section>
+
         {/* Features Section */}
         <section id="features" className="py-20 scroll-mt-20">
           <div className="container mx-auto px-4">
@@ -236,74 +253,74 @@ export default function HomePage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <Card className="border-green-100 hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                <CardHeader className="text-center">
+                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4 mx-auto">
                     <BarChart3 className="w-6 h-6 text-green-600" />
                   </div>
                   <CardTitle className="text-green-800">실시간 모니터링</CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600">어르신 수면 상태/심박/호흡을 침대 아래에서 비접촉으로 측정합니다</p>
+                <CardContent className="text-center">
+                  <p className="text-gray-600">어르신 수면 상태/심박/호흡을 침대 아래에서 <br></br>비접촉으로 측정합니다</p>
                 </CardContent>
               </Card>
 
               <Card className="border-green-100 hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                <CardHeader className="text-center">
+                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4 mx-auto">
                     <Zap className="w-6 h-6 text-green-600" />
                   </div>
                   <CardTitle className="text-green-800">자동 알림</CardTitle>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="text-center">
                   <p className="text-gray-600">이상 징후 감지 시 바로 직원에게 알림을 전송합니다</p>
                 </CardContent>
               </Card>
 
               <Card className="border-green-100 hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                <CardHeader className="text-center">
+                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4 mx-auto">
                     <Clock className="w-6 h-6 text-green-600" />
                   </div>
                   <CardTitle className="text-green-800">간편 설치</CardTitle>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="text-center">
                   <p className="text-gray-600">침대 아래 설치, 전원만 연결하면 5분 이내 작동 시작</p>
                 </CardContent>
               </Card>
 
               <Card className="border-green-100 hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                <CardHeader className="text-center">
+                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4 mx-auto">
                     <Brain className="w-6 h-6 text-green-600" />
                   </div>
                   <CardTitle className="text-green-800">AI 수면 분석</CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600">어르신의 수면 리듬, 깨는 시간, 호흡 변화 등을 AI가 자동 분석</p>
+                <CardContent className="text-center">
+                  <p className="text-gray-600">어르신의 수면 리듬, 깨는 시간, 호흡 변화 등을<br></br> AI가 자동 분석</p>
                 </CardContent>
               </Card>
 
               <Card className="border-green-100 hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                <CardHeader className="text-center">
+                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4 mx-auto">
                     <FileText className="w-6 h-6 text-green-600" />
                   </div>
                   <CardTitle className="text-green-800">리포트 자동 생성</CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600">보호자 대응용 수면 리포트, 바이탈 리포트를 자동으로 생성</p>
+                <CardContent className="text-center">
+                  <p className="text-gray-600">보호자 대응용 수면 리포트, 바이탈 리포트를<br></br> 자동으로 생성</p>
                 </CardContent>
               </Card>
 
               <Card className="border-green-100 hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                <CardHeader className="text-center">
+                  <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4 mx-auto">
                     <Shield className="w-6 h-6 text-green-600" />
                   </div>
                   <CardTitle className="text-green-800">개인정보 보호</CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600">On-Premise 설치로 데이터는 자체 서버에 안전하게 저장</p>
+                <CardContent className="text-center">
+                  <p className="text-gray-600">On-Premise 설치로 데이터는<br></br> 자체 서버에 안전하게 저장</p>
                 </CardContent>
               </Card>
             </div>
